@@ -25,7 +25,7 @@ public class DatePickerClass {
 	}
 
 	// Date format should be dd-mm-yyyy
-	public void selectDate(String expDate) throws InterruptedException {
+	public void selectDate(String expDate) {
 
 		dateNotFound = true;
 		String[] date = splitData(expDate,"/");
@@ -37,7 +37,7 @@ public class DatePickerClass {
 		// This loop will be executed continuously till dateNotFound Is true.
 		while (dateNotFound) {
 			// Retrieve current selected month name from date picker popup.
-			Thread.sleep(3000);
+			
 			String calMonth = driver.findElement(By.className("ui-datepicker-month")).getText();
 			System.out.println(calMonth+ "TextONe");
 			// Retrieve current selected year name from date picker popup.

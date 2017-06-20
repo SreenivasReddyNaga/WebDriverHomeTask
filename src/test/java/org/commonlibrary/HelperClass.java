@@ -17,18 +17,7 @@ public class HelperClass {
 
 	public HelperClass(WebDriver driver) {
 		this.driver = driver;
-	}
-
-	public boolean isTextPresent(String textToVerify) {
-		String bodyText;
-		bodyText = driver.findElement(By.tagName("body")).getText();
-
-		if (bodyText.contains(textToVerify)) {
-			return true;
-		} else {
-			return false;
-		}
-	}
+	}	
 
 	public void selectOptionByText(WebElement objProperty, String optionToSelect) {
 

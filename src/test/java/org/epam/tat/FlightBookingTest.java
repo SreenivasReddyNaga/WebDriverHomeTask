@@ -28,7 +28,7 @@ public class FlightBookingTest extends WebDriverBaseClass {
 	
 
 	@Test
-	public void flightBookingTest() throws InterruptedException {
+	public void flightBookingTest() {
 		HomePage homePage = new HomePage();
 		HelperClass helper = new HelperClass(driver);
 		Assert.assertEquals(driver.getTitle(), homePage.expTitle);
